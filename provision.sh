@@ -26,6 +26,7 @@ sudo apt-get -qq -y clean
 # Well; kmm defaults to Vienna...
 sudo timedatectl set-timezone "Europe/London"
 
+
 # Get minikube etc.
 wget -q -O minikube https://storage.googleapis.com/minikube/releases/$(curl -s https://api.github.com/repos/kubernetes/minikube/releases/latest | grep tag_name | cut -d '"' -f 4)/minikube-linux-amd64 && \
     chmod +x minikube && \

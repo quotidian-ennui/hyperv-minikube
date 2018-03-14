@@ -8,6 +8,10 @@ end
 
 Vagrant.configure(2) do |config|
   config.vm.box = "kmm/ubuntu-xenial64"
+  # Can't use bento because when you do the dist-upgrade it has "issues"
+  # with grub-efi and brings up some kind of interactive prompt
+  # config.vm.box = "bento/ubuntu-16.04"
+  # config.vm.box_version = "v201801.02.0"
   config.vm.provider "hyperv"
 
   config.vm.provider "hyperv" do |hyperv|
