@@ -1,0 +1,5 @@
+vm:
+  cpu: 2
+  memory: 4096
+  name: vagrant-ubuntu-xenial
+  mac: 00-15-5D-48-53-53
