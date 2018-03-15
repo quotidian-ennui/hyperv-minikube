@@ -10,7 +10,7 @@ sudo apt-get -y remove unattended-upgrades
 # Get the latest updates.....
 sudo apt-get -qq -y update
 sudo apt-get -qq -y install python2.7 python-pip  apt-transport-https ca-certificates software-properties-common figlet
-sudo apt-get -qq -y dist-upgrade
+sudo DEBIAN_FRONTEND=noninteractive apt-get -qq -y dist-upgrade
 sudo apt-get -qq -y autoremove
 
 # Add docker + virtualbox
